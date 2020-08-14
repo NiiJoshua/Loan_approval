@@ -1,10 +1,14 @@
 # Loan_approval
 The notebook is about housing data on who applies for a loan and if the loan gets approved or rejected. 
 
-Executive Summary
+## Executive Summary
 This document illustrates an analysis of data concerning mortgage application and predict the acceptance or denial of an application. This analysis encapsulates 500 000 observations of mortgage data from the Federal Financial Institutions Examination Council (FFIEC)
+
+## The Data
 The data had 21 features columns (except for row_id) and one label column. The features in the data were both numeric and categorical but the categorical features were encoded in numerical form. Before performing any summary statistics of the data and making any feature engineering, the categorical features were converted from their numeric representations in order to create a distinction between numerical and categorical features. After the encoding, some data cleaning was done and some feature engineering was performed to ensure the data was ready for building a machine learning model. The features were further used to create a binary classifier capable of predicting the success of failure of mortgage loan application with an accuracy of 72%. The xgboost Classifier was used.
 After exploring the data by calculating summary and descriptive statistics, and by creating visualizations of the data, several potential relationships between features and label (accepted) were identified.
+
+## Data conclusions
 After performing the analysis, the author presents the following conclusions:
 From the features given, most significant features identified using the Feature Selection module in Azure Machine Learning Studio were:
 • loan_puropose (categorical): This feature indicates whether the purpose of the loan was for home purchase, home improvement, or refinancing;
@@ -36,5 +40,5 @@ guaranteed, or government-insured in the following values; Conventional (any loa
 • Number_of_1_to_4_family units (numerical): dwellings that are built to house fewer that 5 families.
 
 
-Conclusion
+## Conclusion
 The accuracy of the binary classifier is well presented. An omission of a feature reduces the accuracy of the mode which shows the sensitivity of the data. The analysis shows white folks are far more likely to be successful in application for a mortgage loan and male applicants are more than twice likely to be successful than female applicants. Though there are some ethical concerns, the variables in the data incites management decision into who gets approval or not for a mortgage application.
